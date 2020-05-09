@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Goblin Race</name>
+		<description>The 5e homebrew content from the Dand Wiki website.</description>
+		<author url="https://www.dandwiki.com/wiki/Goblin_(5e_Race_Variant)">Dand Wiki</author>
+        <update version="0.0.4">
+            <file name="race-goblin.xml" url="https://raw.githubusercontent.com/community-elements/elements-dndwiki/master/dndwiki/races/race-dryad.xml" />
+        </update>
+    </info>
+
+    <element name="Dryad" type="Race" source="D&amp;D Wiki" id="ID_WIKI_RACE_DRYAD">
+        <description>
+            <h4>PHYSICAL DESCRIPTION</h4>
+            <p>Goblins are small, squat creatures about 3 to 4 feet tall with pointed ears and equally pointy teeth. They have jet black hair and sometimes vary through deep brown and occasionally a deep grey or silver and skin that varies from hues of orange to hues of green. They have beady black eyes and flat faces. Besides that, goblins are very numerous and varied creatures almost more than humans.</p>
+            <h4>HISTORY</h4>
+            <p>Goblin history is rich with folklore and tall tales, ranging from hobgoblin invasions of old to the story of a young goblin once rode a chicken into an orc camp. However, it is also riddled with tales of subjugation and powerlessness as, due to their small size, they are frequently bullied into the service of other malevolent creatures. This history of groveling makes goblins dream of gaining power and strength of their own, which sometimes draws them to adventure.</p>
+            <h4>SOCIETY</h4>
+            <p>Goblins live in loose clans ruled by a leader they refer to as a Mob Boss. Evil goblin societies frequently war against their neighbors, if not attempt to annoy them. More peaceable goblins, who are fewer and far between, prefer to play practical jokes on neighbors, which sometimes can be just as bad as if they had declared war. /n/n Some goblins believe in reincarnation, which makes them even more dangerous than normal Goblins, as, without the fear of death, they have no qualms dying or sacrificing other goblins for the greater (their own) good. /n/nIn the cities where they are accepted, most of the time begrudgingly, goblins usually live in solitary or occasionally join gangs with other races.</p>
+            <h4>GOBLIN NAMES</h4>
+            <p>Goblin names are not given at birth as the average goblin life expectancy is very short and they believe giving a name to be a waste. Instead, they assign them numbers until, if the goblin is lucky or resourceful enough, they reach the age of maturity (usually after 4 years). These names are given by the Mob Boss and named goblins gain great respect among their comrades. If a goblin does something incredibly daring (or stupid) and gains renown, he may also be given a title describing the deed.</p>
+            <p>
+                <b>Male: </b>Gungax, Makdox, Gizil, Bilnix Rukalog, Drax, Unkgil<br/>
+                <b>Female: </b>Tiwin, Kawli, Wort, Ib, Drolaw, Marowa, Walow            
+            </p>
+            <h4>GOBLIN TRAITS</h4>
+            <p>The question isn't "Why would you want to play a goblin?" The question is, "How uncomfortable are you with your character setting himself on fire?"</p>
+            <p>
+                <span class="feature">Ability Score Increase.</span>Your Dexterity score increases by 2.<br />
+                <span class="feature">Age.</span>Goblins mature faster than other races considered fully grown at the age of 3. Unfortunately, goblins are also a very short-lived race not because of the shortness or their natural lifespan but because the majority of them live brutal and short lives or do brutal and stupid things. The oldest goblin to date was a boggart elder, who had survived to the ripe old age of 43 until he fell into a patch of bog and drowned.<br />
+                <span class="feature">Alignment.</span>Goblins alignment tends to differ by subrace, however, it is very unlikely a goblin, regardless of subrace, will ever be lawful.<br />
+                <span class="feature">Size.</span>Goblins are short, usually 3 to 4 feet and weigh about 50 pounds. Your size is Small.<br />
+                <span class="feature">Speed.</span>Goblins are naturally fast despite being small creatures. Your base walking speed is 30 feet.<br />
+                <span class="feature">Dark Vision.</span>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
+                <span class="feature">Nimble Escape</span>Goblins know when to run when things get heated. When you are the target of an opportunity attack, you may use your reaction to impose disadvantage on that attack.<br />
+                <span class="feature">Languages.</span>You can speak, read, and write Common and Goblin.<br />
+				<span class="feature">Sub Races</span>Greenskins, Boggarts, Gremlins<br />
+            </p>
+        </description>
+        <setters>
+            <set name="names" type="male">Gungax, Makdox, Gizil, Bilnix Rukalog, Drax, Unkgil</set>
+            <set name="names" type="female">Tiwin, Kawli, Wort, Ib, Drolaw, Marowa, Walow</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d4">2'11"</set>
+            <set name="weight" modifier="1">40</set>
+        </setters>
+        <sheet display="false">
+            <description>Goblins are small, squat creatures about 3 to 4 feet tall with pointed ears and equally pointy teeth. They have jet black hair and sometimes vary through deep brown and occasionally a deep grey or silver and skin that varies from hues of orange to hues of green. They have beady black eyes and flat faces. Besides that, goblins are very numerous and varied creatures almost more than humans.</description>
+        </sheet>
+        <rules>
+            <stat name="dexterity" value="2" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_GOBLIN_DARK_VISION" />
+            <grant type="Racial Trait" id="ID_WIKI_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+        </rules>
+    </element>
+    <element name="Dark Vision" type="Racial Trait" source="Dand Wiki" id="ID_WIKI_RACIAL_TRAIT_GOBLIN_DARK_VISION">
+        <description>
+            <p>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray</p>
+        </description>
+        <sheet>
+            <description>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray</description>
+        </sheet>
+    </element>
+    <element name="Nimble Escape" type="Racial Trait" source="Dand Wiki" id="ID_WIKI_RACIAL_TRAIT_GOBLIN_NIMBLE_ESCAPE">
+        <description>
+            <p>Goblins know when to run when things get heated. When you are the target of an opportunity attack, you may use your reaction to impose disadvantage on that attack.</p>
+        </description>
+        <sheet>
+            <description>Goblins know when to run when things get heated. When you are the target of an opportunity attack, you may use your reaction to impose disadvantage on that attack.</description>
+        </sheet>
+    </element>
+</elements>
