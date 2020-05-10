@@ -5,7 +5,7 @@
 		<description>The 5e homebrew content from the Dand Wiki website.</description>
 		<author url="https://www.dandwiki.com/wiki/Goblin_(5e_Race_Variant)">Dand Wiki</author>
 		<update version="0.0.1">
-			<file name="race-goblin2.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit/reddit-unearthed-arcana.index" />
+			<file name="race-goblin2.index" url="https://raw.githubusercontent.com/Minecraftkixx/dnd-races-and-things/master/race-goblin2.index" />
 		</update>
 	</info>
 	<files>
