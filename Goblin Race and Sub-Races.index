@@ -6,6 +6,6 @@
 		<author url="https://www.dandwiki.com/wiki/Goblin_(5e_Race_Variant)">Dand Wiki</author>
 	</info>
 	<files>
-		<file name="race-goblin.xml" url="https://github.com/Minecraftkixx/dnd-races-and-things/blob/master/race-goblin.xml" />		
+		<file name="race-goblin.xml" url="https://raw.githubusercontent.com/Minecraftkixx/dnd-races-and-things/master/race-goblin.xml" />		
 	</files>
 </index>
