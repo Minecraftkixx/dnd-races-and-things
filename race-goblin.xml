@@ -5,7 +5,7 @@
 		<description>The 5e homebrew content from the Dand Wiki website.</description>
 		<author url="https://www.dandwiki.com/wiki/Goblin_(5e_Race_Variant)">Dand Wiki</author>
         <update version="0.0.4">
-            <file name="race-goblin.xml" url="https://github.com/Minecraftkixx/dnd-races-and-things/blob/master/race-goblin.xml" />
+            <file name="race-goblin.xml" url="https://raw.githubusercontent.com/Minecraftkixx/dnd-races-and-things/master/race-goblin.xml" />
         </update>
     </info>
 
